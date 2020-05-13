@@ -1,0 +1,49 @@
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ececec;
+  list-style: none;
+  position: fixed;
+  top: 0;
+  text-decoration: none;
+  width: 100vw;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: gray;
+}
+
+.site-title,
+.site-subtitle {
+  color: whitesmoke;
+  margin: 1rem;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .site-title,
+  .site-subtitle {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .site-title,
+  .site-subtitle {
+    font-size: 3rem;
+  }
+}

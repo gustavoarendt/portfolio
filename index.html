@@ -4,26 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gustavo Arendt</title>
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
   </head>
   <body>
     <header id="home">
         <nav class="menu">
             <ul>
               <li>
-                <a href="#home">Início</a></li>
+                <a href="#home">Início</a>
+              </li>
               <li>
-                
+                <a href="#portfolio">Portfolio</a>
+              </li>
+              <li>  
                 <a href="https://github.com/gustavoarendt" target="_blank"><img class="logo" src="./svgs/github.svg" alt="Github"> Github</a>
               </li>
               <li>
                 <a
-                  href="https://www.linkedin.com/in/gustavo-arendt-40417a139/"
-                  target="_blank"
-                  ><img class='logo' src="./svgs/linkedin.svg" alt="LinkedIn"> LinkedIn</a
-                >
+                  href="https://www.linkedin.com/in/gustavo-arendt-40417a139/" target="_blank">
+                  <img class='logo' src="./svgs/linkedin.svg" alt="LinkedIn"> LinkedIn</a>
               </li>
-              <li><a href="#contato">Contato</a></li>
+              <li>
+                <a href="#contato">Contato</a>
+              </li>
             </ul>
             <div>
               <h1 class="site-title">Gustavo Arendt</h1>
@@ -31,6 +38,32 @@
             </div>
         </nav>
     </header>
+    <main>
+      <section id='portfolio'>
+        <div class="cards">
+          <div class="card">
+            <h2 class="cardTitle">COVID-19</h2>
+            <a href="https://colab.research.google.com/drive/1aT0dJ5g240G3pZRGPoD9-DCSOT38VYgz?usp=sharing" target="_blank"><img src="https://colab.research.google.com/img/colab_favicon_256px.png" alt="cardImage" class="cardImage"></a>
+            <p class="cardDescription">Treatment and plotting of COVID-19 data from Johns Hopkins</p>
+          </div>
+          <div class="card">
+            <h2 class="cardTitle">Title</h2>
+            <img src="https://cdn.iconscout.com/icon/free/png-256/django-12-1175186.png" alt="cardImage" class="cardImage">
+            <p class="cardDescription">Some short description</p>
+          </div>
+          <div class="card">
+            <h2 class="cardTitle">Title</h2>
+            <img src="" alt="cardImage" class="cardImage">
+            <p class="cardDescription">Some short description</p>
+          </div>
+          <div class="card">
+            <h2 class="cardTitle">Title</h2>
+            <img src="" alt="cardImage" class="cardImage">
+            <p class="cardDescription">Some short description</p>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer id="contato">
       <div>
         <img src="./svgs/whatsapp.svg" alt="Whatsapp">
