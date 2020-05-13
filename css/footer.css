@@ -2,11 +2,10 @@
   background-color: #0c0c0c;
   color: #fdfdfd;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   padding: 15px 0;
-  height: 10vh;
 }
 
 #contato div {
