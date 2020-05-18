@@ -13,37 +13,56 @@
   position: fixed;
   top: 0;
   text-decoration: none;
-  width: 100vw;
+  width: 100%;
 }
 
-a {
+li a {
+  display: block;
+  padding: 15px 10px;
   list-style: none;
   text-decoration: none;
-  color: black;
+  color: #1a1a1a;
+  transition: linear 0.5s;
 }
 
-a:hover {
+.menu li:hover {
+  background-color: #23345e;
+  color: white;
+}
+
+li a:hover {
   text-decoration: underline;
-  color: gray;
+  color: whitesmoke;
 }
 
 .site-title,
 .site-subtitle {
   color: whitesmoke;
-  margin: 1rem;
+  margin: 1em;
   text-align: center;
 }
 
+.site-title {
+  font-size: 2em;
+}
+.site-subtitle {
+  font-size: 1em;
+}
+
 @media (min-width: 600px) {
-  .site-title,
+  .site-title {
+    font-size: 3em;
+  }
   .site-subtitle {
-    font-size: 2rem;
+    font-size: 2em;
   }
 }
 
 @media (min-width: 1000px) {
-  .site-title,
+  .site-title {
+    font-size: 4em;
+  }
   .site-subtitle {
-    font-size: 3rem;
+    font-size: 3em;
   }
 }

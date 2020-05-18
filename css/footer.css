@@ -1,18 +1,25 @@
-#contato {
+.info {
+  margin-top: 2em;
   background-color: #0c0c0c;
   color: #fdfdfd;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 15px 0;
+  padding: 15px;
 }
 
-#contato div {
+figure i {
+  text-decoration: none;
+  color: white;
   display: flex;
-  align-items: center;
-  text-align: left;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  align-content: center;
+  padding: 0 10px;
 }
-#contato img {
-  margin: 0 10px;
+
+figure i:hover,
+i:active {
+  text-shadow: 0px 0px 15px cyan;
 }

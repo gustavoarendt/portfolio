@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gustavo Arendt</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/about.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <script src="https://kit.fontawesome.com/91a61b56e3.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    <!-- Home Section -->
     <header id="home">
         <nav class="menu">
             <ul>
@@ -18,51 +23,71 @@
                 <a href="#home">Início</a>
               </li>
               <li>
-                <a href="#portfolio">Portfolio</a>
-              </li>
-              <li>  
-                <a href="https://github.com/gustavoarendt" target="_blank"><img class="logo" src="./svgs/github.svg" alt="Github"> Github</a>
+                <a href="#about">Sobre</a>
               </li>
               <li>
-                <a
-                  href="https://www.linkedin.com/in/gustavo-arendt-40417a139/" target="_blank">
-                  <img class='logo' src="./svgs/linkedin.svg" alt="LinkedIn"> LinkedIn</a>
+                <a href="#portfolio">Projetos</a>
               </li>
               <li>
-                <a href="#contato">Contato</a>
+                <a href="#info">Contato</a>
               </li>
             </ul>
             <div>
               <h1 class="site-title">Gustavo Arendt</h1>
-              <h3 class="site-subtitle">Mechanical Engineering</h1>
+              <h3 class="site-subtitle">Jr. Web Developer</h1>
             </div>
         </nav>
     </header>
+    <!-- About Section -->
     <main>
-      <section id='portfolio'>
-        <div class="cards">
-          <div class="card">
-            <h2 class="cardTitle">COVID-19</h2>
-            <a href="https://colab.research.google.com/drive/1aT0dJ5g240G3pZRGPoD9-DCSOT38VYgz?usp=sharing" target="_blank"><img src="https://colab.research.google.com/img/colab_favicon_256px.png" alt="cardImage" class="cardImage"></a>
-            <p class="cardDescription">Treatment and plotting of COVID-19 data from Johns Hopkins</p>
-          </div>
-          <div class="card">
-            <h2 class="cardTitle">Recipe Manager</h2>
-            <a href="https://github.com/gustavoarendt/django-receitas" target="_blank"><img src="https://cdn.iconscout.com/icon/free/png-256/django-12-1175186.png" alt="cardImage" class="cardImage"></a>
-            <p class="cardDescription">Project made while learning django framework with postgreSQL.</p>
+      <section id='about' class="about">
+        <div></div>
+        <div class="about_left">
+          <h2>Sobre</h2>
+          <br><br><br>
+          <p>
+            Olá, sou estudante de engenharia mecânica, ao longo do último ano do curso, tive um contato mais profundo com programação e acabei me fascinando com este universo.<br><br>
+            Entre 2019 e 2020, dediquei a maior parte dos meus estudos à área de tecnologia de modo genérico, grande foco foi em Data Science e Machine Learning, e nos últimos meses me identifiquei principalmente em programação de back-end e front-end.<br><br>
+            Apesar de começar os estudos de modo generalista, as tecnologias que mais utilizei foram Python e JavaScript. <br><br>
+            Busco uma oportunidade de iniciar uma carreira como desenvolvedor web, atuando preferencialmente em ambas stacks.
+          </p>
+        </div>
+        <div class="about_right">
+          <img class="profile_pic" src="https://pbs.twimg.com/profile_images/1130507280124960769/ER-7W2xM_400x400.jpg" alt="Foto Gustavo">
+        </div>
+      </section>
+      <!-- Project Section -->
+      <section id='portfolio' class="portfolio container">
+        <h2>Projetos</h2>
+        <div class="portfolio_flex">
+          <div class="grid">
+            <figure class="card">
+              <a href="https://colab.research.google.com/drive/1aT0dJ5g240G3pZRGPoD9-DCSOT38VYgz?usp=sharing" target="_blank"><img src="./imgs/covid-data.jpg" alt="cardImage"></a>
+              <p>Dados COVID-19</p>
+            </figure>
+            <figure class="card">
+              <a href="https://github.com/gustavoarendt/django-receitas" target="_blank"><img src="./imgs/django-receita.jpg" alt="cardImage"></a>
+              <p>Gerenciador de Receitas</p>
+            </figure>
+            
           </div>
         </div>
       </section>
     </main>
-    <footer id="contato">
-      <div>
-        <img src="./svgs/whatsapp.svg" alt="Whatsapp">
-        <p>Whatsapp: (51) 986-592-856</p>
-      </div>
-      <div>
-        <img src="./svgs/outlook.svg" alt="E-Mail">
-        <p>E-Mail: gustavo.arendt@outlook.com</p>
-      </div>
+    <!-- Info Section -->
+    <footer id="info" class="info">
+      <figure>
+        <a href="https://github.com/gustavoarendt" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+      </figure>
+      <figure>
+        <a href="https://www.linkedin.com/in/gustavo-arendt-40417a139/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
+      </figure>
+      <figure>
+        <a href="https://twitter.com/GustyZero" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+      </figure>
+      <figure>
+        <a href="mailto:gustavo.arendt@outlook.com"><i class="fas fa-envelope fa-2x"></i></a>
+      </figure>
     </footer>
   </body>
 </html>
